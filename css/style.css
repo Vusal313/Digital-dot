@@ -1,0 +1,371 @@
+:root {
+    --bgwhite: #F7F6F5;
+    --bgmilk: #EBE8E6;
+    --bgblue: #2683FF;
+    --bgblack: #1D1F25;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: var(--bgwhite);
+    position: fixed;
+    z-index: 99;
+}
+
+nav a {
+    color: var(--bgblack);
+    font-size: 1.2em;
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+    animation-name: logo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+nav .menu,
+ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav .menu li {
+    padding: 0 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+nav .menu a:hover {
+    color: var(--bgblue);
+    transition: 0.3s;
+    padding:  0 10px;
+}
+
+nav a{
+    padding: 0 10px;
+}
+
+nav a>i:hover {
+    transform: scale(1.2);
+    transition: 1s;
+    color: var(--bgblue);
+}
+
+header .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgwhite);
+}
+
+header .text h1 {
+    font-size: 4em;
+    text-align: center;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-top: 110px;
+    color: var(--bgblack);
+  
+    }
+
+
+header .text p {
+    text-align: center;
+    font-size: 2em;
+    font-family: sans-serif;
+    margin-top: 30px;
+    color: var(--bgblack);
+}
+
+header .text button {
+    width: 150px;
+    margin: 20px 0;
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+    background-color: var(--bgblue);
+    color: var(--bgwhite);
+    border-radius: 10px;
+    border: 0;
+}
+
+button:hover {
+    border-radius: 30px;
+    scale: 1.1;
+    transition: 1.3s;
+    background: linear-gradient(
+        to right,rgba(0,168,253),violet 35%,#e00a95);
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 2s linear infinite;
+}
+@keyframes gradient {
+    0%{
+        background-position: 0% 75%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 100%;
+    }
+}
+
+.section1 {
+    background-color: var(--bgmilk);
+}
+
+.section1 .carousel-caption>button:hover {
+    scale: 1.1;
+    transition: 0.8s;
+}
+
+.section2 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgmilk);
+    padding: 30px 0;
+}
+
+.section2 img {
+    width: 370px;
+    object-fit: cover;
+}
+
+.section2 .image {
+    overflow: hidden;
+    width: 370px;
+    overflow: hidden;
+    object-fit: contain;
+
+}
+
+.section2 .cards1,
+.cards2,
+.cards3,
+.cardss1,
+.cardss2,
+.cardss3 {
+    width: 370px;
+    overflow: hidden;
+    height: 580px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+
+.section2 .cards1:hover,
+.cards2:hover,
+.cards3:hover,
+.cardss1:hover,
+.cardss2:hover,
+.cardss3:hover {
+    scale: 1;
+    transition: 1s;
+    background-color: var(--bgblue);
+    border-radius: 10px;
+    h1,p{
+        color: var(--bgwhite);
+   }
+img {
+    scale:1.1;
+    transition: 1.5s;
+}
+
+}
+
+
+.section2 .card1,
+.section2 .card2 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--bgmavi);
+    
+}
+
+
+.section2 h1,
+.section2 p {
+    font-family: sans-serif;
+    color: var(--bgblack);
+    margin: 10px 0;
+}
+
+.section2 p {
+    font-size: 1.2em;
+}
+
+.section2 h1 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+footer .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    background-color: var(--bgblue);
+}
+
+footer .text h1 {
+    text-align: center;
+    font-size: 2em;
+    color: var(--bgwhite);
+    font-family: sans-serif;
+    font-weight: 700;
+    padding-top: 50px;
+
+}
+
+footer .text button {
+    width: 150px;
+    margin: 20px 0;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--bgwhite);
+    background-color: var(--bgblue);
+    border-radius: 10px;
+    border: 1px solid var(--bgwhite);
+}
+
+footer .text button:hover {
+    background-color: var(--bgblack);
+    color: var(--bgwhite);
+    border-radius: 50px;
+    scale: 1.1;
+    transition: 1.5s;
+    border: 0;
+}
+
+footer .text1 {
+    height: 50px;
+    background-color: var(--bgwhite);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin: 0 20px;
+    color: var(--bgblack);
+}
+
+@media only screen and (max-width: 900px) {
+    header {
+        display: block;
+    }
+
+    nav {
+        position: relative;
+        padding-top: 50px;
+    
+    }
+    nav img{
+        margin-top: 130px;
+    }
+    nav .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav .icons{
+        display: flex;
+        flex-direction: column;
+    }
+    nav .icons, i{
+        margin: 5px 0;
+    }
+
+    nav,
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size:15px;
+    }
+    .menu li {
+        margin: 5px 0;
+    }
+
+    header .text h1 {
+        font-size: 2em;
+        margin-top: 180px;
+    }
+
+    header .text p {
+        font-size: 1em;
+    }
+
+    .section1 {
+        display: block;
+        width: 100%;
+    }
+
+    .section2 .card1,
+    .card2 {
+        flex-direction: column;
+    }
+
+    .section2 .cards1,
+    .cards2,
+    .cards3,
+    .cardss1,
+    .cardss2,
+    .cardss3 {
+        width: 100%;
+        margin: 10px 0;
+        height: 100vh;
+    }
+
+    .section2 h1,
+    p {
+        width: 50%;
+    }
+
+    footer {
+        display: block;
+    }
+
+    footer .text h1 {
+        font-size: 1.2em;
+        height: 50px;
+    }
+
+    footer .text1 {
+        flex-direction: column;
+
+    }
+
+    footer .text1 p {
+        padding: 10px 0;
+    }
+
+}

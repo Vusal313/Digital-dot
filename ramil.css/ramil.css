@@ -1,0 +1,336 @@
+:root {
+    --bgwhite: #F7F6F5;
+    --bgmilk: #EBE8E6;
+    --bgblue: #2683FF;
+    --bgblack: #1D1F25;
+    --bggrey: #7A7A7A;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: var(--bgwhite);
+    position: fixed;
+    z-index: 99;
+}
+
+nav a {
+    color: var(--bgblack);
+    font-size: 1em;
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+    animation-name: logo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+nav .menu,
+ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav .menu li {
+    padding: 0 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+nav .menu a:hover {
+    color: red;
+    transition: 0.3s;
+}
+
+nav a>i {
+    padding: 0 10px;
+}
+
+nav a>i:hover {
+    transform: scale(1.2);
+    transition: 1s;
+    color: red;
+}
+
+header {
+    background-color: var(--bgwhite);
+}
+
+header .text h1 {
+    font-size: 3em;
+    padding: 150px 0 50px 0;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: var(--bgblack);
+}
+
+main {
+    padding: 50px 0;
+    background-color: var(--bgmilk);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main .smm h1 {
+    color: red;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: var(--bggrey);
+}
+
+main .smm2 {
+    margin-left: 50px;
+}
+
+main .smm2 h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--bgblack);
+    margin: 20px 0;
+}
+
+main .smm3 h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: red;
+}
+
+main .smm3 li {
+    font-size: 1.3em;
+    color: var(--bggrey);
+}
+
+main .telim {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+main .telim h2 {
+    color: var(--bgblack);
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+main .telim li {
+    font-size: 1.2em;
+    color: var(--bggrey);
+}
+
+main .telim h2,
+main .telim li {
+    margin: 20px 0;
+}
+
+main .ramil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .ramil h1 {
+    font-size: 2.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--bgblack);
+    font-weight: 600;
+}
+
+main .ramil button {
+    padding: 20px 30px;
+    display: flex;
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: var(--bgwhite);
+    background-color: red;
+    border: 0;
+}
+
+main .ramil button:hover {
+    background-color: var(--bgblue);
+    color: beige;
+    border-radius: 50px;
+    scale: 1;
+    transition: 1.5s;
+}
+
+main .telim1 h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: var(--bgblack);
+    font-weight: 600;
+}
+
+main .telim1 h2 {
+    font-size: 1.8em;
+    color: red;
+    font-weight: 600;
+}
+
+main .telim1 li {
+    font-size: 1.5em;
+    color: var(--bgblack);
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+main .qiymet h1,
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+    color: green;
+}
+
+main .qiymet li {
+    font-size: 1.5em;
+    color: var(--bgblack);
+}
+
+main .icon {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main .icon button {
+    padding: 5px 20px;
+    border-radius: 8px;
+    border: 0;
+    background-color: green;
+    stop-color: aliceblue;
+    margin-top: 20px;
+    color: var(--bgwhite);
+    display: flex;
+    align-items: center;
+}
+
+main .icon button:hover {
+    border-radius: 50px;
+    background-color: red;
+    color: var(--bgmilk);
+    transition: 1.5s;
+
+}
+
+footer {
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    padding: 0 20px 0 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--bgblack);
+}
+
+@media only screen and (max-width: 900px) {
+    header {
+        display: block;
+    }
+
+    nav {
+        position: relative;
+        padding-top: 50px;
+    
+    }
+    nav img{
+        margin-top: 130px;
+    }
+    nav .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav .icons{
+        display: flex;
+        flex-direction: column;
+    }
+    nav .icons, i{
+        margin: 5px 0;
+    }
+
+    nav,
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size:15px;
+    }
+    .menu li {
+        margin: 5px 0;
+    }
+
+    header .text h1 {
+        font-size: 2em;
+    }
+
+    header .text p {
+        font-size: 1em;
+    }
+main{
+    display: block;
+}
+    main img {
+        width: 100%;
+        margin: 0 20px;
+    }
+
+    main .smm,
+    .smm2,
+    .smm3,
+    .telim,
+    .ramil,
+    .telim1,
+    .qiymet>h1,h2 {
+        font-size: 1.5em;
+    }
+    main .smm,
+    .smm2,
+    .smm3,
+    .telim,
+    .ramil,
+    .telim1,
+    .qiymet>p,li{
+        font-size: 1em;
+}
+main .icon{
+    flex-direction: column;
+}
+footer  {
+    flex-direction: column;
+    font-size: 15px;
+
+}
+
+footer .container> p {
+    padding: 10px 0;
+}
+}
